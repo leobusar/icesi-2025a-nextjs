@@ -1,9 +1,11 @@
 import Link from "next/link"
+import { ActiveLink } from "../active-link/ActiveLink"
 
 const navItems = [
     {name: 'About', path:'/about'},
     {name: 'Profile', path:'/profile'},
     {name: 'Login', path:'/login'},
+    {name:'Counter', path: '/counter'}
 ]
 
 export const NavBar = () => {
@@ -20,7 +22,7 @@ export const NavBar = () => {
             <div className="flex flex-1">
                 {
                     navItems.map(item => (
-                        <Link href={item.path} className='p-2 m-2 text-white'>{item.name}</Link>
+                        <ActiveLink {...item} key={item.path} />
                     ))
                 }
             </div>

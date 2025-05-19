@@ -1,0 +1,8 @@
+.link {
+    @apply hover:underline transition-all;
+}
+
+.active{
+    color:blue;
+    background-color: antiquewhite;
+}

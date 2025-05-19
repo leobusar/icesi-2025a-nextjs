@@ -10,10 +10,10 @@ export default function MainLayout({
  children: React.ReactNode;
 }) {
   return (
-    <div>
+    <>
       <NavBar />
       <h1>Hello Root and MetaData</h1>
       <div>{children}</div>
-    </div>
+    </>
   );
 }
